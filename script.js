@@ -49,6 +49,106 @@ const quizQuestions = [
       { text: "To follow only one person", correct: false }
     ],
     explanation: "Using several clues helps people confirm their location and avoid errors."
+  },
+  {
+    question: "What is a map most useful for when navigating?",
+    answers: [
+      { text: "Showing routes, landmarks, and position", correct: true },
+      { text: "Predicting the weather for a year", correct: false },
+      { text: "Measuring the temperature of space", correct: false },
+      { text: "Turning music into light", correct: false }
+    ],
+    explanation: "Maps help people compare where they are with the route they need to follow."
+  },
+  {
+    question: "Why do sailors often check the wind direction?",
+    answers: [
+      { text: "It can help them understand speed, travel direction, and conditions", correct: true },
+      { text: "It tells them exactly how long a day is", correct: false },
+      { text: "It always marks the nearest city", correct: false },
+      { text: "It removes the need for a map", correct: false }
+    ],
+    explanation: "Wind direction and strength provide important information about the journey and conditions."
+  },
+  {
+    question: "What does a sextant help measure?",
+    answers: [
+      { text: "The angle of a star above the horizon", correct: true },
+      { text: "The depth of a riverbed", correct: false },
+      { text: "The brightness of a computer screen", correct: false },
+      { text: "The time in a classroom", correct: false }
+    ],
+    explanation: "A sextant measures angles between a star and the horizon to estimate position."
+  },
+  {
+    question: "Why are landmarks important for navigation?",
+    answers: [
+      { text: "They help people recognise where they are and guide their route", correct: true },
+      { text: "They always move with the tide", correct: false },
+      { text: "They remove the need for directions", correct: false },
+      { text: "They are only useful in cities", correct: false }
+    ],
+    explanation: "Landmarks provide familiar reference points that help confirm location."
+  },
+  {
+    question: "What is a key benefit of using both natural and technological clues?",
+    answers: [
+      { text: "It makes navigation more reliable", correct: true },
+      { text: "It guarantees every trip is easy", correct: false },
+      { text: "It replaces all travel planning", correct: false },
+      { text: "It means no one needs a route", correct: false }
+    ],
+    explanation: "Combining clues reduces uncertainty and helps navigators cross-check their position."
+  },
+  {
+    question: "Which statement about GPS is correct?",
+    answers: [
+      { text: "It can help people locate themselves using satellite signals", correct: true },
+      { text: "It works only when the sun is directly overhead", correct: false },
+      { text: "It is powered only by ocean waves", correct: false },
+      { text: "It is a type of compass", correct: false }
+    ],
+    explanation: "GPS uses satellite signals to work out a location anywhere the signal is available."
+  },
+  {
+    question: "How can clouds help with navigation?",
+    answers: [
+      { text: "They can hint at weather changes and nearby land or storms", correct: true },
+      { text: "They always show the exact direction to the equator", correct: false },
+      { text: "They can replace a map completely", correct: false },
+      { text: "They only matter at night", correct: false }
+    ],
+    explanation: "Cloud patterns can help people notice changing weather and possible land or storm conditions."
+  },
+  {
+    question: "Which tool is best for checking direction quickly in an emergency?",
+    answers: [
+      { text: "A compass", correct: true },
+      { text: "A backpack", correct: false },
+      { text: "A notebook only", correct: false },
+      { text: "A calculator", correct: false }
+    ],
+    explanation: "A compass gives quick direction information when a traveller needs a fast check."
+  },
+  {
+    question: "Why are stars useful for navigation at night?",
+    answers: [
+      { text: "They are steady reference points in the sky", correct: true },
+      { text: "They always stay at the same distance from Earth", correct: false },
+      { text: "They only appear in one part of the world", correct: false },
+      { text: "They remove the need for any other clue", correct: false }
+    ],
+    explanation: "Stars provide dependable points in the sky that can help travellers find direction."
+  },
+  {
+    question: "What does the term 'course' mean in navigation?",
+    answers: [
+      { text: "The path or direction you are trying to travel", correct: true },
+      { text: "The amount of food you carry", correct: false },
+      { text: "A type of weather report", correct: false },
+      { text: "The same as a mountain peak", correct: false }
+    ],
+    explanation: "A course is the planned direction or route of travel."
   }
 ];
 
