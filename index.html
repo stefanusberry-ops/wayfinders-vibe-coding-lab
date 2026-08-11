@@ -11,7 +11,7 @@
     <div class="header-inner">
       <p class="eyebrow">Wayfinders Vibe Coding Lab</p>
       <h1 id="appTitle">StarPath Quiz</h1>
-      <p id="appTagline">Test your knowledge of navigation from stars to satellites.</p>
+      <p id="appTagline">Read the sky, read the ocean, and read the way home.</p>
     </div>
   </header>
 
@@ -19,28 +19,153 @@
     <section class="hero">
       <h2>How people navigate</h2>
       <p id="appPurpose">
-        People have found their way across oceans for generations by carefully observing the natural world. Today, navigators also use tools such as compasses and GPS.
+        People have found their way across oceans for generations by carefully observing the natural world. Indigenous navigators from Aotearoa, the Pacific, and beyond have used stars, weather, swell, birds, and knowledge passed down through generations to guide their journeys. Today, navigators still use a mix of old knowledge and modern tools like compasses, maps, and GPS.
       </p>
     </section>
 
     <section class="cards" aria-label="Navigation facts">
-      <article class="card" data-detail="Stars appear in predictable positions and can help navigators work out direction.">
+      <article class="card" data-detail="Some stars act like signposts. Navigators learn where they rise, where they set, and how they move across the night sky.">
         <h3>Stars</h3>
-        <p>Stars appear in predictable positions and can help navigators work out direction.</p>
+        <p>Some stars act like signposts. Navigators learn where they rise, where they set, and how they move across the night sky.</p>
         <p class="detail"></p>
       </article>
 
-      <article class="card" data-detail="Waves, currents, and wildlife can provide clues about nearby land and weather.">
+      <article class="card" data-detail="Swells, waves, wind, birds, and cloud patterns give clues about direction, distance, and land nearby.">
         <h3>Ocean</h3>
-        <p>Waves, currents, and wildlife can provide clues about nearby land and weather.</p>
+        <p>Swells, waves, wind, birds, and cloud patterns give clues about direction, distance, and land nearby.</p>
         <p class="detail"></p>
       </article>
 
-      <article class="card" data-detail="Compasses, maps, and GPS help modern travellers check their position.">
+      <article class="card" data-detail="Tools like compass, charts, and GPS can support navigation, but they work best alongside observation and knowledge.">
         <h3>Technology</h3>
-        <p>Compasses, maps, and GPS help modern travellers check their position.</p>
+        <p>Tools like compass, charts, and GPS can support navigation, but they work best alongside observation and knowledge.</p>
         <p class="detail"></p>
       </article>
+    </section>
+
+    <section class="traditions">
+      <div class="section-heading">
+        <h2>Wayfinding traditions</h2>
+      </div>
+
+      <div class="mini-cards">
+        <article class="mini-card">
+          <h3>Māori and Pacific star knowledge</h3>
+          <p>Many navigators learn the positions of specific stars, their rising and setting patterns, and how they connect to direction and travel.</p>
+        </article>
+
+        <article class="mini-card">
+          <h3>Ocean pathways</h3>
+          <p>Ocean journeys depend on understanding swell direction, currents, weather changes, and the look and sound of water.</p>
+        </article>
+
+        <article class="mini-card">
+          <h3>Travel maps and memory</h3>
+          <p>Skilled navigators remember routes, environments, and waypoints without needing constant technology.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="how-it-works">
+      <div class="section-heading">
+        <h2>How navigation works</h2>
+      </div>
+
+      <div class="steps">
+        <article class="step">
+          <span>1</span>
+          <h3>Observe</h3>
+          <p>Watch the sky, the ocean, and the weather changes around you.</p>
+        </article>
+
+        <article class="step">
+          <span>2</span>
+          <h3>Notice patterns</h3>
+          <p>Look for repeated signs such as star positions, swell direction, and bird behaviour.</p>
+        </article>
+
+        <article class="step">
+          <span>3</span>
+          <h3>Compare clues</h3>
+          <p>Check more than one source so you can confirm your position.</p>
+        </article>
+
+        <article class="step">
+          <span>4</span>
+          <h3>Choose a direction</h3>
+          <p>Use the best evidence to decide the safest and most accurate route.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="wayfinding-tabs">
+      <div class="section-heading">
+        <h2>Māori and Pacific wayfinding</h2>
+      </div>
+
+      <div class="tab-buttons" role="tablist" aria-label="Wayfinding topics">
+        <button class="tab-button active" type="button" data-tab="stars" role="tab" aria-selected="true">Stars</button>
+        <button class="tab-button" type="button" data-tab="oceans" role="tab" aria-selected="false">Oceans</button>
+        <button class="tab-button" type="button" data-tab="tools" role="tab" aria-selected="false">Tools</button>
+      </div>
+
+      <div class="tab-panels">
+        <article class="tab-panel active" id="panel-stars" role="tabpanel">
+          <p>Specific stars and star groups have long been used as guideposts. Māori and Pacific navigators learn the positions of stars as they rise and set, and use that pattern to keep track of direction and travel over long distances.</p>
+        </article>
+
+        <article class="tab-panel" id="panel-oceans" role="tabpanel">
+          <p>Across the Pacific Ocean, navigators read swell, wind, tides, and the changing tone of the sea. These clues help travellers understand where open water lies and what might be nearby.</p>
+        </article>
+
+        <article class="tab-panel" id="panel-tools" role="tabpanel">
+          <p>Traditional navigation tools included practical instruments, memory aids, star maps, and knowledge shared through teaching. These supports helped skilled navigators keep direction even when technology was not available.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="route-map-panel">
+      <div class="section-heading">
+        <h2>Trail map</h2>
+      </div>
+
+      <div class="route-map" aria-label="Stylised route across the Pacific Ocean">
+        <div class="route-line"></div>
+        <div class="waypoint waypoint-aotearoa">Aotearoa</div>
+        <div class="waypoint waypoint-tonga">Tonga</div>
+        <div class="waypoint waypoint-samoa">Samoa</div>
+        <div class="waypoint waypoint-hawaii">Hawaiʻi</div>
+      </div>
+
+      <p class="route-caption">Journey memory and careful observation helped navigators follow routes across the Pacific using natural signs, remembered waypoints, and confidence built over many voyages.</p>
+    </section>
+
+    <section class="tool-comparison">
+      <div class="section-heading">
+        <h2>Technology tools</h2>
+      </div>
+
+      <div class="tool-grid">
+        <article class="tool-card">
+          <h3>Compass</h3>
+          <p>Shows magnetic direction and helps a traveller keep a clear bearing.</p>
+        </article>
+
+        <article class="tool-card">
+          <h3>Star chart</h3>
+          <p>Organises star positions so a navigator can recognise patterns in the night sky.</p>
+        </article>
+
+        <article class="tool-card">
+          <h3>GPS</h3>
+          <p>Uses satellite signals to estimate position and help with route planning.</p>
+        </article>
+
+        <article class="tool-card">
+          <h3>Traditional aid</h3>
+          <p>A handmade or remembered navigation aid can support teaching, memory, and practical travel decisions.</p>
+        </article>
+      </div>
     </section>
 
     <section id="myFeature" class="feature" aria-live="polite">
@@ -51,15 +176,15 @@
         </div>
         <div class="score-box" aria-live="polite">
           <span>Score</span>
-          <strong id="score">0/15</strong>
+          <strong id="score">0/10</strong>
         </div>
       </div>
 
       <div class="progress-wrap" aria-label="Quiz progress">
-        <div id="progressBar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-valuetext="Question 1 of 5"></div>
+        <div id="progressBar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-valuetext="Question 1 of 10"></div>
       </div>
 
-      <div id="questionMeta" class="question-meta">Question 1 of 5</div>
+      <div id="questionMeta" class="question-meta">Question 1 of 10</div>
       <div id="questionText" class="question-text"></div>
       <div id="answerButtons" class="answer-grid" role="group" aria-label="Answer choices"></div>
       <div id="feedback" class="feedback hidden" aria-live="polite"></div>
