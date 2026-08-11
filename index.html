@@ -3,73 +3,70 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My Wayfinders App</title>
+  <title>StarPath Quiz</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-
-  <!-- ============================================================
-       HEADER
-       CHANGE ME: your app name and one-line description
-       ============================================================ -->
-  <header>
-    <h1 id="appTitle">My Wayfinders App</h1>
-    <p id="appTagline">A simple web app I built with GitHub Copilot.</p>
+  <header class="site-header">
+    <div class="header-inner">
+      <p class="eyebrow">Wayfinders Vibe Coding Lab</p>
+      <h1 id="appTitle">StarPath Quiz</h1>
+      <p id="appTagline">Test your knowledge of navigation from stars to satellites.</p>
+    </div>
   </header>
 
-  <main>
-
-    <!-- ============================================================
-         WELCOME SECTION
-         CHANGE ME: explain what your app does and who it is for
-         ============================================================ -->
+  <main class="page-shell">
     <section class="hero">
-      <h2>Welcome</h2>
+      <h2>How people navigate</h2>
       <p id="appPurpose">
-        This app was made to share something I care about. Change this text to
-        explain what your app does and who it is for.
+        People have found their way across oceans for generations by carefully observing the natural world. Today, navigators also use tools such as compasses and GPS.
       </p>
-      <button id="messageButton">Tap me</button>
-      <p id="message" class="message"></p>
     </section>
 
-    <!-- ============================================================
-         KNOWLEDGE CARDS
-         CHANGE ME: three ideas, facts, stories or steps
-         Click a card to reveal more detail.
-         ============================================================ -->
-    <section class="cards">
-
-      <article class="card" data-detail="Add the detail that appears when this card is selected.">
-        <h3>Idea 1</h3>
-        <p>Add a short description here.</p>
+    <section class="cards" aria-label="Navigation facts">
+      <article class="card" data-detail="Stars appear in predictable positions and can help navigators work out direction.">
+        <h3>Stars</h3>
+        <p>Stars appear in predictable positions and can help navigators work out direction.</p>
         <p class="detail"></p>
       </article>
 
-      <article class="card" data-detail="Add the detail that appears when this card is selected.">
-        <h3>Idea 2</h3>
-        <p>Add a short description here.</p>
+      <article class="card" data-detail="Waves, currents, and wildlife can provide clues about nearby land and weather.">
+        <h3>Ocean</h3>
+        <p>Waves, currents, and wildlife can provide clues about nearby land and weather.</p>
         <p class="detail"></p>
       </article>
 
-      <article class="card" data-detail="Add the detail that appears when this card is selected.">
-        <h3>Idea 3</h3>
-        <p>Add a short description here.</p>
+      <article class="card" data-detail="Compasses, maps, and GPS help modern travellers check their position.">
+        <h3>Technology</h3>
+        <p>Compasses, maps, and GPS help modern travellers check their position.</p>
         <p class="detail"></p>
       </article>
-
     </section>
 
-    <!-- ============================================================
-         YOUR INTERACTIVE FEATURE GOES HERE
-         Ask GitHub Copilot to add a quiz, a journey map, a gallery,
-         or a random message generator inside this section.
-         ============================================================ -->
-    <section id="myFeature" class="feature">
-      <h2>My interactive feature</h2>
-      <p>Ask GitHub Copilot to build your feature inside this section.</p>
-    </section>
+    <section id="myFeature" class="feature" aria-live="polite">
+      <div class="quiz-header">
+        <div>
+          <p class="quiz-label">Navigation challenge</p>
+          <h2>StarPath Quiz</h2>
+        </div>
+        <div class="score-box" aria-live="polite">
+          <span>Score</span>
+          <strong id="score">0/5</strong>
+        </div>
+      </div>
 
+      <div class="progress-wrap" aria-label="Quiz progress">
+        <div id="progressBar" class="progress-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" aria-valuetext="Question 1 of 5"></div>
+      </div>
+
+      <div id="questionMeta" class="question-meta">Question 1 of 5</div>
+      <div id="questionText" class="question-text"></div>
+      <div id="answerButtons" class="answer-grid" role="group" aria-label="Answer choices"></div>
+      <div id="feedback" class="feedback hidden" aria-live="polite"></div>
+      <button id="nextButton" class="next-button hidden" type="button">Next Question</button>
+      <div id="results" class="results hidden" aria-live="polite"></div>
+      <button id="restartButton" class="restart-button hidden" type="button">Play Again</button>
+    </section>
   </main>
 
   <footer>
