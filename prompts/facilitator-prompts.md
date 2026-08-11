@@ -11,6 +11,8 @@
 - [ ] Print the student checklist and prompt pack
 - [ ] Build 2–3 finished example apps to show at the start
 
+editing the facilitator prompt
+
 ## Timing guide (90 minutes, session 2)
 
 | Time | Activity |
